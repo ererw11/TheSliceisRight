@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import com.example.emery.thesliceisright.toppings.*;
 
+import java.text.NumberFormat;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -92,11 +94,21 @@ public class PizzaMenuFragment extends Fragment {
     private void displayDescriptionAndPrice(Pizza pizza) {
         clearDescriptionAndPrice();
         description.setText(pizza.getDescription());
-        price.setText(String.format("$%s", Double.toString(pizza.cost())));
+        price.setText(turnStringToCash(Double.toString(pizza.cost())));
     }
 
     private void clearDescriptionAndPrice() {
         description.setText("");
         price.setText("");
+    }
+
+    // Creates a String in Currency format
+    public static String turnStringToCash(String stringCost) {
+        NumberFormat format = NumberFormat.getCurrencyInstance();
+        if (stringCost == null) {
+            stringCost = "0.0";
+        }
+        double stringDouble = Double.parseDouble(stringCost);
+        return format.format(stringDouble);
     }
 }
