@@ -1,4 +1,4 @@
-package com.example.emery.thesliceisright;
+package com.example.emery.thesliceisright.sizes;
 
 public class LargePizza extends Pizza {
 

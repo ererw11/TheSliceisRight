@@ -2,10 +2,10 @@ package com.example.emery.thesliceisright;
 
 import androidx.fragment.app.Fragment;
 
-public class PizzaMenuActivity extends SingleFragmentActivity {
+public class CustomPizzaActivity extends SingleFragmentActivity{
 
     @Override
     protected Fragment createFragment() {
-        return PizzaMenuFragment.newPizzaMenuInstance();
+        return CustomPizzaFragment.newCustomPizzaInstance();
     }
 }

@@ -1,5 +1,6 @@
 package com.example.emery.thesliceisright;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.emery.thesliceisright.sizes.LargePizza;
+import com.example.emery.thesliceisright.sizes.Pizza;
 import com.example.emery.thesliceisright.toppings.*;
 
 import java.text.NumberFormat;
@@ -19,6 +22,9 @@ public class PizzaMenuFragment extends Fragment {
 
     private Button lisaButton;
     private Button margheritaButton;
+    private Button supremeButton;
+    private Button customButton;
+
     private TextView description;
     private TextView price;
 
@@ -37,10 +43,11 @@ public class PizzaMenuFragment extends Fragment {
 
         lisaButton = v.findViewById(R.id.lisa_button);
         margheritaButton = v.findViewById(R.id.margherita_button);
-        Button supremeButton = v.findViewById(R.id.supreme_button);
+        supremeButton = v.findViewById(R.id.supreme_button);
+        customButton = v.findViewById(R.id.custom_button);
 
         description = v.findViewById(R.id.description);
-        price = v.findViewById(R.id.price);
+        price = v.findViewById(R.id.cost);
 
         // Create the Lisa Pizza
         lisaButton.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +95,17 @@ public class PizzaMenuFragment extends Fragment {
                 displayDescriptionAndPrice(pizza);
             }
         });
+
+        customButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), CustomPizzaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
         return v;
     }
 

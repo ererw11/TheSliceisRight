@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CustomPizzaFragment">
+
+    <!--The pizza sizes-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/size_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small" />
+
+            <CheckBox
+                android:id="@+id/size_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium" />
+
+            <CheckBox
+                android:id="@+id/size_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--The Pizza Sauce-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sauces" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/sauce_tomato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomato" />
+
+            <CheckBox
+                android:id="@+id/sauce_alfredo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alfredo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--The Toppings-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toppings" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/topping_bacon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bacon" />
+
+            <CheckBox
+                android:id="@+id/topping_basil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basil" />
+
+            <CheckBox
+                android:id="@+id/topping_black_olives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black Olives" />
+
+            <CheckBox
+                android:id="@+id/topping_canadian_bacon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canadian Bacon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/topping_green_pepper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green Pepper" />
+
+            <CheckBox
+                android:id="@+id/topping_ham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ham" />
+
+            <CheckBox
+                android:id="@+id/topping_hamburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hamburger" />
+
+            <CheckBox
+                android:id="@+id/topping_mushroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mushroom" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/topping_onion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Onion" />
+
+            <CheckBox
+                android:id="@+id/topping_pepperoni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pepperoni" />
+
+            <CheckBox
+                android:id="@+id/topping_mozzarella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mozzarella" />
+
+            <CheckBox
+                android:id="@+id/topping_italian_sausage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sausage" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

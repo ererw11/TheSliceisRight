@@ -1,6 +1,6 @@
 package com.example.emery.thesliceisright.toppings;
 
-import com.example.emery.thesliceisright.Pizza;
+import com.example.emery.thesliceisright.sizes.Pizza;
 
 public class Bacon extends ToppingDecorator {
     private Pizza pizza;

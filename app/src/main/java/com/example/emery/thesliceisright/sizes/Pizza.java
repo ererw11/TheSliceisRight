@@ -1,4 +1,4 @@
-package com.example.emery.thesliceisright;
+package com.example.emery.thesliceisright.sizes;
 
 public abstract class Pizza {
 
